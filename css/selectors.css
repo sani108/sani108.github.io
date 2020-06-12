@@ -1,0 +1,40 @@
+/* CSS-be így lehet megjegyzéseket írni */
+
+body { background-color: #f0f0f0}
+
+.login-div {                       /* class="login-div" tulajdonságainak megadása */
+    /* többszörösen egymásba ágyazva
+    body div.login-div : a body-ban található azon div-ek, amik a "login-div" class-hoz tartoznak
+    a szelektorok közti szóköz azt jelenti, hogy az elsőben keresi a másodikat
+    ha nincs szóköz, akkor ugyanarra az elemre vonatkozik */
+
+    padding: 15px;
+   border: solid 1px #c0c0c0;
+   box-shadow: 0 3px 5px #777777;
+      display: inline-block;
+
+}
+
+
+.login-div input{                   /* class="login-div"-en belüli input mezők tulajdonságai tulajdonságainak megadása */
+    display: block;
+/*    background-color: whitesmoke; */
+    margin-bottom: 7px;
+    }
+
+ /* ATTRIBÚTUM SZELEKTOR MEGADÁSA: [] KÖZÉ KELL MEGADNI A KONLRÉT AZONOSÍTÓT (CLASS, ID, NAME STB*/
+ .login-div input[type="email"]
+ {
+border: solid 3px blue;
+ }
+
+ input 
+ {border: solid 3px green;} 
+
+ input [class*="red"]
+ {border: solid 1px blue;}
+ /*Szövegek helyettesítés:
+ *   - benne található valahol
+ $  -végződik
+ ^  -kezdődik
+ */
