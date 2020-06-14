@@ -13,7 +13,7 @@ h1 {
     font-family:Georgia, 'Times New Roman', Times, serif} /*CTRL+SPACE a súgó, ez hozza elő a betűtípusokat*/
 
 img { 
-    width: 600px;
+    width: 30%;
     padding: 20px;
     border: 2px green;
     margin: 20px;
@@ -22,8 +22,12 @@ img {
 }
 
 img:hover{
-    width:700px;
+    width:80%;
     background-color: green;
+}
+img:active{
+    width: 100%;
+    background-color: red;
 }
 
 p:hover {
@@ -33,3 +37,9 @@ p:hover {
 h2 {   font-family: 'Sacramento', cursive;    font-size: 48px; text-align: center;}  
 /*https://fonts.google.com/ ról letöltött font, ami a html-ben lett megadva*/
 h3 {   font-family: "gaura" ;  font-size: 48px; text-align: center;} 
+
+#none{ display: none;} /* Benne marad a kódban, de nem jelenik megt*/
+#block{ display: block;} /* nem enged maga mellé másik elemet*/
+#fixed{ display: fixed;} /* fix helyen van*/
+#relative{ display: relative; right:100px;} /* fix helyen van*/
+#absolute{ display: absolutee; left:100px;; top:300px;} /* fix helyen van*/

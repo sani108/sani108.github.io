@@ -38,3 +38,12 @@ border: solid 3px blue;
  $  -végződik
  ^  -kezdődik
  */
+
+ h4:hover {
+    background-color: yellow;
+  }
+ul li:first-child{color: red}
+ul li:last-child{color: green}
+ul li:nth-child(2){color: blue} /* tetszőleges x-edik elem kiválasztása*/
+
+h2 {text-decoration: underline;}
