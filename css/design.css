@@ -40,6 +40,6 @@ h3 {   font-family: "gaura" ;  font-size: 48px; text-align: center;}
 
 #none{ display: none;} /* Benne marad a kódban, de nem jelenik megt*/
 #block{ display: block;} /* nem enged maga mellé másik elemet*/
-#fixed{ display: fixed;} /* fix helyen van*/
-#relative{ display: relative; right:100px;} /* fix helyen van*/
-#absolute{ display: absolutee; left:100px;; top:300px;} /* fix helyen van*/
+#fixed{ position: fixed; left:10px; top:30px;} /* fix helyen van*/
+#relative{ position: relative; right:100px;} /* fix helyen van*/
+#absolute{ position: absolute; left:10px;; top:70px;} /* fix helyen van*/
