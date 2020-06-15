@@ -8,7 +8,10 @@
 </head>
 <body>
     <p></p>
-    <a href="index.html" alt="homepage">Home  </a>  
+    <a         href="index.html">  
+  <img src="/img/pizza.jpg" alt="pizza rendelés" >
+ </a> ">
+   <!--   <a href="index.html" alt="homepage">Home  </a>     -->
     <p></p>
     <form>
         <fieldset >
@@ -35,7 +38,10 @@
     <div>
         <fieldset >
             <legend>Rendelés adatok</legend>
-        <span>Extra feltét (checkbox)</span>
+
+            <label for="amount">Mennyiség</label>
+            <input id="amount" type="number"  name="amount" class="amount" >
+     <!--   <span>Extra feltét (checkbox)</span>
         <div>
             <input  unchecked id="nothing" name="extra" type="checkbox" value="0" >
             <label for="nothing"> Nem kérek</label>
@@ -48,8 +54,8 @@
             <input  unchecked id="double-cheese" name="double-cheese" type="checkbox" value=600" >
             <label for="double-cheese"> Dupla sajt</label>
         </div>
-        <p></p>
-
+        <p></p>-->
+<p></p>
         <span>Extra feltét (radio button)</span>                <!-- Radio button esetében ugyannak kell lennie a névnek -->
         <div>
             <input  checked id="rnothing" name="rextra" type="radio" value="0" >
@@ -64,18 +70,14 @@
             <label for="rdouble-cheese"> Dupla sajt</label>
         </div>
         <p></p>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
+
 </fieldset>
     </div>
 
     <div>
 
-        <input type="button" value="Rendelés éeadása"> Ár: <span>1200</span> Ft
+        <input type="button" onclick="calc()" value="Rendelés leadása"> Ár: <span>1200</span> Ft
     </div>
+    <script src="js/rendeles.js"></script>
 </body>
 </html>
