@@ -7,9 +7,13 @@ function calc() {
   ff = isNaN( ff) ? 0 : ff ; // Ha ShowAmont nem értelmezhető, akkor 0 legyen, ha értelmezhető, akkor maradjon az értéke  // 
     if (ff>12000) { alert ("Kérjük max 10 db-ot rendeljen"); return;}     //return megszakítja a függvényt//
     if (ff<1200) { alert ("Kérjük min 1 pizzát rendeljen") ; return;} 
+    let feltet = 0;
+    if (document.getElementById('rcheese').checked) feltet=300;
+    if (document.getElementById('rdouble-cheese').checked) feltet=600;
+
 
    // alert("Fizetendő összeg= " + ff); //
-    ShowAmont.innerHTML = ff;                // a ShowAmount HTML elemnek megvátoztatja az értékét ff-re//
+    ShowAmont.innerHTML = ff + feltet * parseInt(amount.value.trim());                // a ShowAmount HTML elemnek megvátoztatja az értékét ff-re//
 }
 
 function testemail() {

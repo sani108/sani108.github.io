@@ -9,6 +9,11 @@ html {	background-color: rgb(125, 117, 247); }
 	right: 10 px;
 }
 
-body {font-size:24px;}
+body 
+{
+	font-size:24px;
+	/*	background-image: url("/img/pizza.jpg");
+		background-size: cover; */
+}
 
 img {width: 100%;}
