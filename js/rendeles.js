@@ -22,22 +22,4 @@ function testemail() {
   
 }
 
-/* 
-let name = "Péter";
-name.toUpperCase();    PÉTER
-name.toLowerCase();    péter
-"DR" + name;
-let title = "dr ";
-title.copncat(name);     dr Péter
-
-Boolen(0)    eredmény false
-Boolen(121)  minden eredménye, ami nem 0 true
-
-0 == false  eredmény true
-0 === false eredménye false mert különböző típusúak
-
- */
-
- let test = "Hare Krsna";
- test.indexOf("Hare");
- test.replace("Hare" , "Krisna");
+documents.querySelectorAll

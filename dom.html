@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--   <link rel="stylesheet" href="\css\rendeles.css"> -->
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <p id="1" onclick="wr(id)">  1. ___ <input id="1"  name="1" type="1" required> </p>   
+ <p></p>
+ <p  id="2" onclick="wr(id)">  2. ___ <input id="2" name="1" type="1" required> </p>  
+ <p></p>
+ <p  id="3" onclick="wr(id)">  3. ___ <input id="3" name="1" type="1" required> </p>  
+ <p></p><p></p><p></p>
+    </div>
+
+ 
+        <div>
+            <h2>Attribútum módosítás</h2>
+     <p>   <input id="inp" name="1" type="1" required  value="1">  input ID</p>  
+     <p></p>
+     <p>  <input id="val" name="1" type="1" required  value="red"> szín </p>  
+     <button id="atrmod"  onclick="mod()" > Módosítsd</button>
+ 
+     <p></p><p></p><p></p>
+        </div>
+
+
+
+
+<h1>Szöveges oktató anyagok</h1>
+<h2>Elements: lekérdezése</h2>
+<h3>var myElement = document.getElementById("ID");  ---select by ID </h3> 
+<h3>var x = document.getElementsByTagName("H1");   ---select by Tag (p, h1, inout) </h3> 
+<h3>var x = document.getElementsByClassName("class");     ---select by class name</h3>
+<h3>var x = document.querySelectorAll("p.intro") ;  ---This example returns a list of all elements with class="intro".</h3>
+<p></p>
+
+<h2>Elements: Element bővítése =Element.prototype.UJFunkció</h2>
+ 
+ <p>  Az objektumoknál már tanultuk, hogy lehet bővíteni őket. De egy bizonyos prototype-juk, azaz tervrajzuk vagy prototípusuk is. Minden új elem ez alapján a prototípus alapján készül. Így ha szeretnéd az összes HTML elemet felruházni egy új képességgel, akkor ezt a prototype-ban kell létrehoznod.
+    
+    Például lehet bővíteni az Element-et valamilyen metódussal:
+    <b>
+    let input = document.querySelector('input');
+    Element.prototype.setDisabled = function() {
+      this.setAttribute('disabled', 'disabled');
+      this.classList.add('disabled');
+    }
+    
+    input.setDisabled(); </b></p>
+
+<h1>Attribútumok</h1>
+<h2>Attributum lekérdezése</h2>
+<h3></p>var classes = document.querySelector("H1").getAttribute("class");</h3>
+<p></p>
+<h2>Attributum módosítása</h2>
+<h3>document.querySelector("H1").setAttribute("class", "dark grey big");</h3>
+
+
+<script src="js/dom.js"></script>
+</body>
+</html>
