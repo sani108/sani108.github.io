@@ -28,4 +28,33 @@ function wr(azon) {
        document.getElementById("val").setAttribute("backgroundColor", szinid);
 
     }
+
+    //---------------
+    //ELEM LÉTREHOZÁSA - törlése
+    //--------------
+    function kiir() { 
+
+    let helptext = document.createElement("samll");
+    helptext.innerHTML= "itt egy súgó file-t  lehetne megjeleníteni" ;
+    helptext.id = "helptext";
+    let parent = document.getElementById("help");   //kiválasztja a szülőt
+
+    if (document.getElementById("help").childElementCount == 2) { parent.appendChild(helptext); return;  }
+    if (document.getElementById("help").childElementCount > 2)  parent.removeChild(document.getElementById("helptext")); 
+            
+                    }
+                    /*
+   window.addEventListener("resize", funkction 
+   {
+     console.log(this,innerHeight) ; //document.getElementById("szelesseg").innerHTML(this.innerWidth);
+   }); */
+
+   window.addEventListener("resize", function(){
+     // document.getElementById("demo").innerHTML = "Hello World!";
+     console.log(this,innerHeight, this.innerWidth) ;
+     let par = this.innerWidth;
+     document.getElementById("szelesseg").innerHTML = par;
+     let parm = this.innerHeight;
+     document.getElementById("magassag").innerHTML = parm;
+    });
  //   alert(azon);

@@ -24,11 +24,25 @@
      <p>  <input id="val" name="1" type="1" required  value="red"> szín </p>  
      <button id="atrmod"  onclick="mod()" > Módosítsd</button>
  
-     <p></p><p></p><p></p>
-        </div>
+     <hr></p><p></p><p></p>
+    <div id="help">
+        <button id="help-btn"  onclick="kiir()" > Help text hozzáadás</button>
 
+        <p>____</p>
+ 
+    </div>   
+    
+    </div>
 
+    <hr>
+</div>   
+    <h2> addevEntListener  </h2>
+    <em>Windows szélessége:</em>
+    <p id="szelesseg"> méretezd át az ablakot</p>
+    <p id="magassag"> méretezd át az ablakot</p>
 
+</div>
+<hr>
 
 <h1>Szöveges oktató anyagok</h1>
 <h2>Elements: lekérdezése</h2>
@@ -59,6 +73,15 @@
 <h2>Attributum módosítása</h2>
 <h3>document.querySelector("H1").setAttribute("class", "dark grey big");</h3>
 
+<h2>Childes</h2>
+<h3> document.getElementById("id").childElementCount</h3>
+<h3> document.getElementById("id").childNodes   ---ebben nem csak a html elemek vannak benne, hanem az elemeken kívüli elemeket is</h3>
+<h3> document.getElementById("id").firstChild </h3>
+<h3> document.getElementById("id").firstElementChild </h3>
+
+<h2>Windows events</h2>
+<h3> elemnev.onclick     ----átírja</h3>
+<h3> elemnev.addevEntListener("event pl click", mi torténjen pl finkciónév)   ---hozzáad</h3>
 
 <script src="js/dom.js"></script>
 </body>
